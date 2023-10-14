@@ -1,0 +1,24 @@
+{
+  "name": "asyncweather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tushar-droid/asyncWeather.git"
+  },
+  "author": "Tushar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tushar-droid/asyncWeather/issues"
+  },
+  "homepage": "https://github.com/tushar-droid/asyncWeather#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
