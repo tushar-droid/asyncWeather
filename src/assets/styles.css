@@ -1,8 +1,8 @@
-body{
-    background-color: red;
-    color:white;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  background-color: red;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
