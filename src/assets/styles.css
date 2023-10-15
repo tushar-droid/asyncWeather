@@ -1,8 +1,72 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/Raleway-VariableFont_wght.ttf');
+}
+
+
 body {
-  background-color: red;
-  color: white;
+  font-family: 'Raleway';
+  font-weight: 200;
   font-size: 2rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width:100vw;
+  gap: 5%;
+  background-image:url('./back.jpg');
+  background-size: cover;
+  color:white;
+  outline: solid black;
+  padding: 0;
+  margin: 0;
 }
+
+.search-area{
+        margin-top: 2%;
+    width:30%;
+}
+.search-field{
+    width:100%;
+    background: url("./search.png") no-repeat scroll 8px 8px;
+    background-size:1.9rem;
+    font-family: 'Raleway';
+    font-weight: 200;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    border:none;
+    background-color:#cccccca8;
+    padding:0.5rem 0;
+    transition:all ease-in-out 0.3s;
+    text-indent: 3rem;
+    color:white;
+}
+
+.search-field:focus{
+    background-color:#cccccc8b;
+    outline: none;
+}
+
+.result-container{
+    width:80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:5%;
+}
+
+.top-container{
+    display: flex;
+    gap:6%;
+    align-items: center;
+    font-size: 3rem;   
+}
+
+.bottom-container{
+    background-color:#cccccc45; 
+    height: 50%;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 50px -27px rgba(0,0,0,0.2);
+    border-radius: 2rem;
+}
+
