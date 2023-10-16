@@ -32,7 +32,8 @@ function DOMcontroller(data){
 }
 window.onload = () =>{
     fetchData('Kamloops')
-    .then( data => DOMcontroller(data));
+    .then( data => DOMcontroller(data))
+    .catch(err =>console.log("Error: ", err));
 }
 
 
@@ -41,7 +42,11 @@ const inp = document.querySelector('.search-field');
 inp.addEventListener("keypress", (e)=>{
     if(e.key==="Enter"){
         fetchData(inp.value)
-        .then( data => DOMcontroller(data));
+        .then( data => DOMcontroller(data))
+        .catch(err =>{
+            console.log("Error: ", err)
+            alert('No location with the given name Found!');
+        });
     }
 })
 
